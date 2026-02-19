@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login Dashboard</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container" id="loginContainer">
+    <form id="loginForm" class="card">
+        <h2>Login</h2>
+
+      <input type="email" id="email" placeholder="Email" required>
+      
+      <div class="password-box"> 
+        <input type="password" id="password" placeholder="Password" required>
+        <span id="togglePass">-</span>
+      </div>
+
+      <button type="submit">Login</button>
+      <p class="hint"> Enter any email and password</p>
+    </form>
+</div>
+
+<div class="container hidden" id="dashboard">
+        <div class="card dashboard-card">
+            <h2>Dashboard</h2>
+            <p id="welcome"></p>
+            <div class="grid">
+              <div class="box">Profile</div>
+              <div class="box">Analytics</div>
+              <div class="box">Messages</div>
+            </div>
+            <button id="logout">Logout</button>    
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
